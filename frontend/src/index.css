@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --primary: 253 89% 76%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 267 31% 54%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 256 100% 95%;
+  --accent-foreground: 255 30% 30%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --destructive: 350 100% 95%;
+  --destructive-foreground: 350 70% 35%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 253 89% 76%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --shadow: 253 50% 45%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --primary: 253 89% 76%;
+  --primary-foreground: 253 22% 18%;
+  --secondary: 267 31% 40%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 256 100% 22%;
+  --accent-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --destructive: 350 69% 35%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.3% 22%;
+  --input: 240 3.3% 22%;
+  --ring: 253 89% 76%;
+  --card: 240 10% 10%;
+  --card-foreground: 0 0% 98%;
+  --shadow: 253 50% 10%;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 9999px;
+}
